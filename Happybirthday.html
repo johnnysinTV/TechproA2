@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Seraphina 💖</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #fff0f5, #ffe4ec);
+        height: 100vh;
+        overflow: hidden;
+        color: #d14792;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        opacity: 0;
+        transform: translateY(-20px);
+        animation: fadeInDown 1s forwards 0.5s;
+    }
+
+    @keyframes fadeInDown {
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    p {
+        font-size: 1.25rem;
+        max-width: 900px;
+        margin: 15px auto;
+        line-height: 1.6;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1s forwards;
+    }
+
+    /* Staggered animation delays */
+    p:nth-child(2) { animation-delay: 2s; }
+    p:nth-child(3) { animation-delay: 4s; }
+    p:nth-child(4) { animation-delay: 7s; }
+    p:nth-child(5) { animation-delay: 10s; }
+    p:nth-child(6) { animation-delay: 14s; }
+    p:nth-child(7) { animation-delay: 18s; }
+    p:nth-child(8) { animation-delay: 22s; }
+    p:nth-child(9) { animation-delay: 26s; }
+    p:nth-child(10) { animation-delay: 30s; }
+
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Floating hearts */
+    .heart {
+        position: absolute;
+        color: #ff69b4;
+        font-size: 24px;
+        animation: float 6s infinite;
+        pointer-events: none;
+    }
+
+    @keyframes float {
+        0% { transform: translateY(0) scale(1); opacity: 1; }
+        50% { transform: translateY(-200px) scale(1.2); opacity: 0.7; }
+        100% { transform: translateY(-400px) scale(1); opacity: 0; }
+    }
+</style>
+</head>
+<body>
+
+<h1>Happy Birthday, Seraphina 💖</h1>
+
+<p>To my one and only, my Seraphina,<br>Happy birthday, my love. 💖</p>
+<p>I know this is just a message — just words typed on a screen, not something fancy or expensive. I can’t give you any gifts yet, but what I can give is something much more real — my heart, my loyalty, and every piece of love I have for you. Because you deserve something genuine, something that will never fade.</p>
+<p>You came into my life unexpectedly, but ever since that day, everything felt different — brighter, warmer, and full of purpose. I never thought one person could change so much of me, but you did. You made me laugh when I was down, gave me comfort when I felt alone, and reminded me that I was worth something more.</p>
+<p>Ashley, you’re the peace I never knew I needed. You make my heart calm, yet you’re also the reason it beats faster every time I think of you. You’ve become my reason to keep pushing, to stay kind, to dream bigger.</p>
+<p>I know this world can be cruel sometimes — we’ve both faced things that hurt. But I promise you this: I’m not going anywhere. No matter what happens, no matter how hard it gets, I’ll stay by your side. I’ll keep every promise I’ve made to you. And even when we make mistakes or face problems, I’ll never stop choosing you. Because I love you — not just for who you are now, but for who you’ll become — the woman I want to build a life with someday.</p>
+<p>One day, I want to call you not just my girlfriend, but my wife — the woman I’ll spend my life with, laugh with, and grow old with. I can already see it: us building our dreams together, having a family, living peacefully with a love that never fades.</p>
+<p>You’re turning 15 today, and I know we’re both still young, but my intentions are pure. I’m not here for temporary feelings; I’m here for forever. I want to be part of your journey, your laughter, your growth, and your life. And even if time and distance test us, I’ll be here — always waiting, always faithful, always yours.</p>
+<p>Before I end this, I also want to say something to Tito.<br>Tito, thank you — for raising a daughter as kind, caring, and strong as Ashley. She’s a reflection of the love, guidance, and protection you’ve given her all these years. I might be young, but I promise to take care of her and respect her with all my heart. You raised someone amazing, and I’ll do everything I can to make sure she’s always happy and safe.</p>
+<p>To both of you — happy birthday.<br>Ashley, my love, thank you for being my light, my Seraphina, my angel in human form.<br>And to Tito, may God bless you with strength, health, and happiness always.</p>
+<p>With all my heart and love,<br>— Charles 💍</p>
+
+<script>
+    // Floating hearts
+    const numHearts = 30;
+    for(let i = 0; i < numHearts; i++){
+        const heart = document.createElement('div');
+        heart.className = 'heart';
+        heart.innerText = '💖';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDuration = (4 + Math.random() * 4) + 's';
+        heart.style.fontSize = (20 + Math.random() * 30) + 'px';
+        document.body.appendChild(heart);
+    }
+</script>
+
+</body>
+</html>
